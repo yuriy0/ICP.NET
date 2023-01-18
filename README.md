@@ -259,7 +259,7 @@ Build with the version of `src/ClientGenerator/EdjCase.ICP.ClientGenerator.cspro
 e.g.:
 
 ```
-(cd src/ClientGenerator/ ; dotnet pack --configuration Debug -property:Version=99.99.99-pre)
+(cd src/ClientGenerator/ ; dotnet pack --configuration Release -property:Version=99.99.99-pre)
 dotnet tool install EdjCase.ICP.ClientGenerator --local --add-source ./src/ClientGenerator/nupkg --version 99.99.99-pre --ignore-failed-sources
 ```
 
