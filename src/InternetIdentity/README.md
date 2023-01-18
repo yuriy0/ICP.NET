@@ -10,13 +10,3 @@ candid-client-generator \
     -n "EdjCase.ICP.InternetIdentity" \
     -c InternetIdentity
 ```
-
-Known issues:
-- Some candid type declarations of the following form will fail:
-```
-type A = ...;
-type B = A;
-```
-
-This fails because it gets translated to a `using` alias which refers to a previous `using` alias, which is not permitted.
-
